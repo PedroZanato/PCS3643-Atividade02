@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{% block title %}App{% endblock %}</title>
+  <link rel="stylesheet" href="{{ request.url_for('static', path='css/main.css') }}">
+</head>
+<body>
+  <main class="card" role="main">
+    {% block content %}{% endblock %}
+  </main>
+</body>
+</html>
